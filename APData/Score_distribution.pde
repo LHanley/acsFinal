@@ -8,7 +8,7 @@ class Score {
 
   public Score() {
     try {
-      scan = new Scanner(new File("Desktop/APData/data/cs.csv"));
+      scan = new Scanner(new File("Desktop/APData/data/scores.csv"));
 
 
       while (scan.hasNext())
@@ -36,8 +36,9 @@ class Score {
     {
       for(int x: scores.get(a).keySet())
       {
-        System.out.println(a + ": " + x + " - " + scores.get(a).get(x));
+        System.out.println(a + ": " + x + " - " + scores.get(a).get(x) + "%");
       }
+      System.out.println();
     }
   }
 }
