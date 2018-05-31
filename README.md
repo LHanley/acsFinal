@@ -43,7 +43,7 @@ This is the code that moves down the tree as decisions are made.  It gets each v
 
 ## Authors
 
-* **Billie Thompson** 
+* **Lucas Hanley and Hung Dovu** 
 
 
 ## Acknowledgments
