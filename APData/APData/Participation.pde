@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 class Participation{
   
-  ArrayList<LinkedList> part = new ArrayList<LinkedList>();
+  Map<Integer, LinkedList> part = new TreeMap<Integer, LinkedList>();
   Scanner scan;
   
  
@@ -17,12 +17,22 @@ class Participation{
         String[] line = new String[temp.split(",").length];
         line = temp.split(",");
         
+       part.put(Integer.parseInt(line[0]), new LinkedList());
+       for(int i = 1; i < line.length; i++)
+       {
+         part.get(line[0]).add(line[i]);
+       }
+        
         
       }
       
-    }catch(Exception E){
-      E.printStackTrace();
+    }catch(Exception e){
+      e.printStackTrace();
     }
+    
+  }
+  
+  void display(){
     
   }
   
