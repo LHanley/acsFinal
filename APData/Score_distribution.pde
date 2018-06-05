@@ -25,13 +25,13 @@ class Score {
         }
       }
     }
-    catch(Exception E) {
-      E.printStackTrace();
+    catch(Exception e) {
+      e.printStackTrace();
       System.out.println("no");
     }
   }
-
-  void print() {
+  
+  void display(){
     for(String a: scores.keySet())
     {
       for(int x: scores.get(a).keySet())
@@ -41,4 +41,5 @@ class Score {
       System.out.println();
     }
   }
+
 }
