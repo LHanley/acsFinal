@@ -20,7 +20,7 @@ class Participation{
        part.put(Integer.parseInt(line[0]), new LinkedList());
        for(int i = 1; i < line.length; i++)
        {
-         part.get(line[0]).add(line[i]);
+         part.get(Integer.parseInt(line[0])).add(line[i]);
        }
         
         
@@ -28,11 +28,13 @@ class Participation{
       
     }catch(Exception e){
       e.printStackTrace();
+      System.out.println(e);
     }
     
   }
   
   void display(){
+    
     
   }
   
